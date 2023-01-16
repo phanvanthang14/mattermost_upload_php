@@ -16,6 +16,7 @@ curl_setopt_array($curl, array(
     ),
 ));
 $response = json_decode(curl_exec($curl), true);
+
 ```
 
 ## Send file to channel
