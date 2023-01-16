@@ -1,4 +1,4 @@
---Upload file mattermost using curl php
+## Upload file mattermost using curl php
 
 $curl = curl_init();
 
@@ -16,6 +16,6 @@ curl_setopt_array($curl, array(
 ));
 $response = json_decode(curl_exec($curl), true);
 
--- Send file to channel
+## Send file to channel
 
 post = json_decode('{"message": "message", "channel_id": "' . $channel['id'] . '", "file_ids": ["'.$response['file_infos'][0]['id'].'"]}', true);
